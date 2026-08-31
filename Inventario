@@ -1,0 +1,30 @@
+package Parcial1;
+
+import java.util.Scanner;
+
+public class Inventario {
+    static void main() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Nombre del producto");
+        String nombreProducto = sc.nextLine();
+
+        System.out.println("Cantidad De Producto:");
+        int cantidadTotal = sc.nextInt();
+
+        System.out.println("Cantidad Que Caben: ");
+        int capacidadTarima = sc.nextInt();
+
+        int tarimasCompletas = cantidadTotal / capacidadTarima;
+        int productosSobrante = cantidadTotal % capacidadTarima;
+
+        System.out.println("====Reporte====");
+        System.out.println("Producto:  "+nombreProducto);
+        System.out.println("Cantidad:  "+ cantidadTotal);
+        System.out.println("Capacidad:  "+capacidadTarima);
+        System.out.println("Tarimas Cmpletas:  "+tarimasCompletas);
+        System.out.println("ProductoSobrante:  "+productosSobrante);
+
+        sc.close();
+    }
+}
