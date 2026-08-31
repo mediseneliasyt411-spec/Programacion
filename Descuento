@@ -1,0 +1,29 @@
+package Parcial1;
+
+import java.util.Scanner;
+
+public class PrecioConDescuento {
+    public static void main() {
+        Scanner sc= new Scanner(System.in);
+
+        System.out.println("Calcular Precio Con El Descuento");
+        System.out.println();
+
+        System.out.println("Ingresar El Precio Compra: $");
+        double precio = sc.nextDouble();
+
+        System.out.println("Ingresa El Porcentaje Descuento:");
+        double descuento = sc.nextDouble();
+
+        double montoDescuento = precio * (descuento / 100);
+        double precioFinal = precio - montoDescuento;
+
+        System.out.println();
+        System.out.println("Resultado:");
+        System.out.printf("Precio Original:   $%.2f%n", precio);
+        System.out.printf("Descuento (%.0f%%):  $%.2f%n", descuento, montoDescuento);
+        System.out.printf("Precio Final:    $%.2f%n", precioFinal);
+        sc.close();
+
+    }
+}

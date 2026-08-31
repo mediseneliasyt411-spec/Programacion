@@ -1,0 +1,31 @@
+package Parcial1;
+
+public class FichaTecnica {
+    static void main() {
+        String marca = "Lenovo";
+        String modelo = "Patito";
+        String procersador = "Intel Core i7-1365";
+        int nucleos = 10;
+        String memoriaRam = "16 GB Ram";
+        String almacenamiento = "512";
+        String tarjetaGrafica = "Geforce 3090";
+        String pantalla = "15.6/Full HD";
+        String sistemaOperativo = "Windows";
+        double peso = 1.6;
+
+        //Ficha Tecnica
+        System.out.println("=============================");
+        System.out.println("      Ficha Tecnica          ");
+        System.out.println("=============================");
+        System.out.println("Marca:"+ marca);
+        System.out.println("Modelo:"+ modelo);
+        System.out.println("Procesador:"+ procersador);
+        System.out.println("Nucleos"+ nucleos);
+        System.out.println("MemoriaRam:"+ memoriaRam);
+        System.out.println("Almacenamiento:"+ almacenamiento);
+        System.out.println("TarjetaGrafica:"+ tarjetaGrafica);
+        System.out.println("Pantalla:"+ pantalla);
+        System.out.println("Sistema:"+ sistemaOperativo);
+        System.out.println("Peso:"+ peso);
+    }
+}
