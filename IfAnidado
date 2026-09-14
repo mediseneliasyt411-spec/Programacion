@@ -1,0 +1,44 @@
+package Parcial1;
+
+import java.util.Scanner;
+
+public class IfAnidado {
+     static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Solicitar datos al usuario
+        System.out.print("Nombre del empleado: ");
+        String nombre = sc.nextLine();
+
+        System.out.print("Tipo de empleado (administrador / empleado): ");
+        String tipo = sc.nextLine().toLowerCase();
+
+        System.out.print("Rango del empleado (1 o 2): ");
+        int rango = sc.nextInt();
+
+        // Primero se identifica el tipo de empleado
+        if (tipo.equals("administrador")) {
+            // Dentro del administrador se revisa el rango
+            if (rango == 1) {
+                System.out.println(nombre + " - Acceso limitado.");
+            } else if (rango == 2) {
+                System.out.println(nombre + " - Acceso completo.");
+            } else {
+                System.out.println("Rango no válido para administrador.");
+            }
+        } else if (tipo.equals("empleado")) {
+            // Dentro del empleado se revisa el rango
+            if (rango == 1) {
+                System.out.println(nombre + " - Acceso a consultas.");
+            } else if (rango == 2) {
+                System.out.println(nombre + " - Acceso a consultas y registros.");
+            } else {
+                System.out.println("Rango no válido para empleado.");
+            }
+        } else {
+            System.out.println("Tipo de empleado no válido.");
+        }
+
+        sc.close();
+    }
+}
