@@ -1,0 +1,24 @@
+package Parcial1;
+
+import java.util.Scanner;
+
+public class Ternario {
+     static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Solicitar datos al usuario
+        System.out.print("Nombre del producto: ");
+        String nombre = sc.nextLine();
+
+        System.out.print("Cantidad disponible: ");
+        int cantidad = sc.nextInt();
+
+        // Usar operador ternario para determinar el estado
+        String estado = (cantidad > 0) ? "Disponible" : "Agotado";
+
+        // Mostrar el resultado
+        System.out.println(nombre + " → " + estado);
+
+        sc.close();
+    }
+}
