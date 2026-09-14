@@ -1,0 +1,29 @@
+package Parcial1;
+
+import java.util.Scanner;
+
+public class ElseIf {
+     static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Solicitar datos al usuario
+        System.out.print("Nombre del producto: ");
+        String nombre = sc.nextLine();
+
+        System.out.print("Cantidad disponible: ");
+        int cantidad = sc.nextInt();
+
+        // Clasificar el inventario de mayor a menor
+        if (cantidad >= 50) {
+            System.out.println("Inventario alto.");
+        } else if (cantidad >= 20) {
+            System.out.println("Inventario medio.");
+        } else if (cantidad >= 1) {
+            System.out.println("Inventario bajo.");
+        } else {
+            System.out.println("Producto agotado.");
+        }
+
+        sc.close();
+    }
+}
