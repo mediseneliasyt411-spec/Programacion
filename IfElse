@@ -1,0 +1,32 @@
+package Parcial1;
+/*
+ * Descripción: Solicita el nombre del producto, la cantidad solicitada
+ * y la cantidad disponible. Determina si la venta se autoriza o si el producto
+ * es insuficiente.*/
+
+import java.util.Scanner;
+
+public class IfElse {
+     static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Solicitar datos al usuario
+        System.out.print("Nombre del producto: ");
+        String nombre = sc.nextLine();
+
+        System.out.print("Cantidad solicitada: ");
+        int solicitada = sc.nextInt();
+
+        System.out.print("Cantidad disponible: ");
+        int disponible = sc.nextInt();
+
+        // Verificar si hay suficiente inventario
+        if (solicitada <= disponible) {
+            System.out.println("Venta autorizada.");
+        } else {
+            System.out.println("Producto insuficiente.");
+        }
+
+        sc.close();
+    }
+}
