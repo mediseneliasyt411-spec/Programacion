@@ -1,0 +1,20 @@
+package Parcial1;
+
+import java.util.Scanner;
+
+public class IfSimple {
+    static void main() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Nombre del producto:  ");
+        String nombre = sc.nextLine();
+
+        System.out.println("Cantidad Disponible:  ");
+        int cantidad = sc.nextInt();
+
+        if (cantidad < 10){
+            System.out.println("Advertencia: Inventario bajo");
+        }
+        sc.close();
+    }
+}
